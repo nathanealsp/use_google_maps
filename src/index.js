@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
-// CREATE NEW COMPONENT
-class App extends Component {
-  render() {
-    return <div>HEY</div>;
-  }
-}
-// PUT COMPONENT INTO THE DOM
-ReactDOM.render(<App />, document.querySelector(".container"));
+import App from "./components/app";
+import reducers from "./reducers";
+
+ReactDOM.render(
+  <Provider store={createStore(reducers)}>
+    <App />
+  </Provider>,
+  document.querySelector(".container")
+);

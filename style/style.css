@@ -1,20 +1,29 @@
-.search-bar {
-  margin: 20px;
-  text-align: center;
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  /* background-color: #f5f5f5; */
+  background: #1fa2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.search-bar input {
-  width: 75%;
-}
-
-.video-item img {
-  max-width: 64px;
-}
-
-.video-detail .details {
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+body {
+  background: #a6ffcb;
 }
 
 .list-group-item {
@@ -22,16 +31,15 @@
 }
 
 .list-group-item:hover {
-  background-color: #eee;
+  background: #1fa2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .ledy {
-  background: #eb3349;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f45c43, #eb3349);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f45c43, #eb3349);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: #1fa2ff;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);

@@ -24,3 +24,18 @@
 .list-group-item:hover {
   background-color: #eee;
 }
+
+.ledy {
+  background: #eb3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f45c43, #eb3349);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f45c43, #eb3349);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1fa2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

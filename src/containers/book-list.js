@@ -1,16 +1,14 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 // CREATE NEW COMPONENT
 class BookList extends Component {
   renderList() {
-    return this.props.books.map(book => {
-      return (
-        <li key={book.title} className="list-group-item">
-          {book.title}
-        </li>
-      );
-    });
+    return this.props.books.map(book => (
+      <li key={book.title} className="list-group-item bg-dark text-white">
+        {book.title}
+      </li>
+    ));
   }
   render() {
     return <ul className="list-group col-sm-4">{this.renderList()}</ul>;
@@ -20,9 +18,9 @@ class BookList extends Component {
 // LINKING REDUX TO REACT
 
 function mapStateToProps(state) {
-  //THIS WILL SHOW UP AS PROPS IN BOOKS LIST.
+  // THIS WILL SHOW UP AS PROPS IN BOOKS LIST.
   return {
-    books: state.books
+    books: state.books,
   };
 }
 

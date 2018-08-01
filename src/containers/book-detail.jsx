@@ -14,6 +14,7 @@ class BookDetail extends Component {
         <h2>CAST</h2>
         <div>{this.props.book.actors}</div>
         <img src={this.props.book.image} alt="" srcSet="" />
+        <h1>Do yo want to look at that?</h1>
         <div>{this.props.book.image}</div>
       </div>
     );

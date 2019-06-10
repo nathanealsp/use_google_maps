@@ -1,4 +1,9 @@
-export const amsterdam = [
+export const amsterdam = {
+  lat: 52.323311,
+  lng: 4.87524,
+};
+
+export const amsterdamRestuarants = [
   {
     id: 218142,
     name: 'Bellini',
